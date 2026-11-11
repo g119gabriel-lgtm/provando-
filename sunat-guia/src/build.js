@@ -29,6 +29,16 @@ const out = path.resolve(__dirname, '..', 'pdf');
     printBackground: true,
   });
 
+  // Variante ahorro de tinta (para imprimir y cortar)
+  await page.goto('file://' + path.join(__dirname, 'bolsillo.html'), { waitUntil: 'networkidle' });
+  await page.addStyleTag({ path: path.join(__dirname, 'tinta.css') });
+  await page.evaluate(() => document.fonts.ready);
+  await page.pdf({
+    path: path.join(out, 'SUNAT_bolsillo_A6_ahorro_tinta.pdf'),
+    preferCSSPageSize: true,
+    printBackground: true,
+  });
+
   await browser.close();
   console.log('ok');
 })();

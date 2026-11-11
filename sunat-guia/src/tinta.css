@@ -1,0 +1,10 @@
+/* Variante para imprimir: sin fondos, poca tinta */
+:root { --paper: #ffffff; --tint: #ffffff; --accent-soft: #ffffff; --trap-soft: #ffffff; --warn-soft: #ffffff; --ok-soft: #ffffff; }
+body, .pg, .back, .tile { background: #fff !important; }
+.cover { background: #fff !important; color: var(--ink) !important; border: 0.8px solid var(--ink); }
+.cover h1 { color: var(--ink) !important; }
+.cover .k { border-top-color: var(--ink) !important; color: var(--ink-soft); opacity: 1; }
+.cover p, .cover .s { color: var(--ink-soft); opacity: 1; }
+.box { background: #fff !important; border: 0.5px solid var(--rule); border-left-width: 2px; }
+.trap { border-left-color: var(--trap); } .key { border-left-color: var(--accent); }
+.mem { border-left-color: var(--warn); } .lit { border-left-color: var(--ink-soft); }
