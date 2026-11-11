@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>SUNAT de bolsillo — repaso A6</title>
+<link rel="stylesheet" href="base.css">
+<style>
+@page { size: 105mm 148mm; margin: 0; }
+body { font-size: 7.9pt; line-height: 1.36; background: #fff; }
+.pg { width: 105mm; height: 148mm; padding: 7mm 6.5mm 8.5mm; position: relative; overflow: hidden; page-break-after: always; background: var(--paper); }
+.pg:last-child { page-break-after: auto; }
+.hd { display: flex; align-items: baseline; gap: 2mm; border-bottom: 1.4px solid var(--accent); padding-bottom: 1.2mm; margin-bottom: 2.4mm; }
+.hd .n { font-family: var(--mono); font-weight: 700; color: var(--accent); font-size: 9pt; }
+.hd h2 { font-size: 10.6pt; margin: 0; letter-spacing: -0.01em; }
+.hd .t { margin-left: auto; font-family: var(--sans); font-size: 6pt; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.fn { position: absolute; bottom: 3.6mm; left: 6.5mm; right: 6.5mm; display: flex; justify-content: space-between; font-family: var(--sans); font-size: 5.8pt; color: var(--muted); border-top: 0.4px solid var(--rule); padding-top: 1mm; }
+h4 { font-size: 8pt; margin: 2mm 0 .8mm; color: var(--accent); }
+p { margin: 0 0 1.4mm; }
+ul, ol { margin: 0 0 1.6mm; padding-left: 3.6mm; }
+li { margin-bottom: .5mm; }
+table { font-size: 7.4pt; margin: .5mm 0 2mm; }
+th { font-size: 6.3pt; padding: .8mm 1mm; text-transform: uppercase; letter-spacing: .04em; }
+td { padding: .85mm 1mm; line-height: 1.28; }
+td:first-child { font-weight: 600; white-space: nowrap; }
+td.w { white-space: normal; }
+.box { padding: 1.6mm 2.2mm; margin: 1.4mm 0 2mm; font-size: 7.5pt; }
+.box .lbl { font-size: 5.8pt; display: block; margin-bottom: .4mm; }
+.box p:last-child, .box ul:last-child { margin-bottom: 0; }
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; }
+.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.6mm; }
+.tile { border: 0.6px solid var(--rule); border-radius: 3px; padding: 1.6mm 1.8mm; background: #fff; }
+.tile .big { font-family: var(--mono); font-weight: 700; font-size: 13pt; color: var(--accent); line-height: 1; display: block; margin-bottom: .6mm; }
+.tile span.s { font-size: 6.8pt; color: var(--ink-soft); line-height: 1.25; display: block; }
+.lit { font-size: 7.3pt; }
+/* portada */
+.cover { display: flex; flex-direction: column; justify-content: space-between; background: var(--accent); color: #fff; }
+.cover .k { font-family: var(--sans); font-size: 6.4pt; letter-spacing: .16em; text-transform: uppercase; opacity: .85; border-top: 1.5px solid #fff; padding-top: 2mm; }
+.cover h1 { font-family: var(--serif); color: #fff; font-size: 25pt; line-height: 1; margin: 0 0 3mm; letter-spacing: -0.02em; }
+.cover p { font-size: 8.4pt; opacity: .92; }
+.cover .s { font-family: var(--mono); font-size: 7pt; opacity: .8; }
+.back { background: var(--tint); }
+</style>
+</head>
+<body>
+
+<!-- 1 PORTADA -->
+<div class="pg cover">
+  <div class="k">Repaso de bolsillo · A6</div>
+  <div>
+    <h1>SUNAT<br>de bolsillo</h1>
+    <p>Derecho tributario, Código Tributario, IGV y Renta en 24 tarjetas para repasar rápido.</p>
+  </div>
+  <div class="s">PRA N.º 003-2026 · UIT 2026 S/ 5 500 · mínimo 13.00</div>
+</div>
+
+<!-- 2 ÍNDICE -->
+<div class="pg">
+  <div class="hd"><span class="n">00</span><h2>Índice</h2><span class="t">mapa</span></div>
+  <table>
+    <tr><td>03–04</td><td class="w">Números y plazos clave</td></tr>
+    <tr><td>05–06</td><td class="w">La SUNAT: 4 normas · Ley 29816</td></tr>
+    <tr><td>07</td><td class="w">Constitución, art. 74</td></tr>
+    <tr><td>08–10</td><td class="w">Normas I–XVI · palabra → Norma</td></tr>
+    <tr><td>11</td><td class="w">Tributo, tasa y especies</td></tr>
+    <tr><td>12</td><td class="w">Sujetos de la obligación</td></tr>
+    <tr><td>13</td><td class="w">Extinción (art. 27)</td></tr>
+    <tr><td>14</td><td class="w">Prescripción</td></tr>
+    <tr><td>15</td><td class="w">Deuda, TIM, fraccionamiento</td></tr>
+    <tr><td>16</td><td class="w">Determinación y actos</td></tr>
+    <tr><td>17–18</td><td class="w">Procedimientos y contencioso</td></tr>
+    <tr><td>19</td><td class="w">Infracciones y sanciones</td></tr>
+    <tr><td>20–21</td><td class="w">IGV · Renta</td></tr>
+    <tr><td>22</td><td class="w">Pares que confunden</td></tr>
+    <tr><td>23</td><td class="w">Artículos que más se preguntan</td></tr>
+    <tr><td>24</td><td class="w">Cómo detectar la trampa</td></tr>
+  </table>
+  <div class="box key"><span class="lbl">Leyenda</span><p>"Comillas" = texto literal de la norma. ◇ = dato no re-verificado. Todo lo demás se verificó contra la norma.</p></div>
+  <div class="fn"><span>SUNAT de bolsillo</span><span>2</span></div>
+</div>
+
+<!-- 3 NÚMEROS I -->
+<div class="pg">
+  <div class="hd"><span class="n">01</span><h2>Números clave</h2><span class="t">memorizar</span></div>
+  <div class="g3">
+    <div class="tile"><span class="big">5 500</span><span class="s">UIT 2026 (S/). D.S. 301-2025-EF</span></div>
+    <div class="tile"><span class="big">18 %</span><span class="s">IGV = 16 % + 2 % IPM</span></div>
+    <div class="tile"><span class="big">29.5</span><span class="s">% de Renta, Régimen General</span></div>
+    <div class="tile"><span class="big">10 %</span><span class="s">RMT hasta 15 UIT de ganancia</span></div>
+    <div class="tile"><span class="big">13.00</span><span class="s">nota mínima; examen = 50 %</span></div>
+    <div class="tile"><span class="big">5 años</span><span class="s">mandato del Superintendente</span></div>
+  </div>
+  <h4>Prescripción (art. 43)</h4>
+  <div class="g3">
+    <div class="tile"><span class="big">4</span><span class="s">años si declaraste; 4 para devolución o compensación</span></div>
+    <div class="tile"><span class="big">6</span><span class="s">años si NO declaraste</span></div>
+    <div class="tile"><span class="big">10</span><span class="s">años si el agente no pagó lo retenido</span></div>
+  </div>
+  <h4>Porcentajes de gastos</h4>
+  <table>
+    <tr><td>Representación</td><td class="w">0.5 % de ingresos <b>brutos</b>, tope 40 UIT</td></tr>
+    <tr><td>Recreativos</td><td class="w">0.5 % de ingresos <b>netos</b>, tope 40 UIT</td></tr>
+    <tr><td>Promoción (IGV)</td><td class="w">1 % de ingresos brutos promedio mensuales, tope 20 UIT</td></tr>
+    <tr><td>TIM</td><td class="w">máximo TAMN + 10 % (la TAMN la publica la SBS)</td></tr>
+  </table>
+  <div class="fn"><span>Números</span><span>3</span></div>
+</div>
+
+<!-- 4 PLAZOS -->
+<div class="pg">
+  <div class="hd"><span class="n">02</span><h2>Plazos de procedimiento</h2><span class="t">días hábiles</span></div>
+  <table>
+    <tr><th>Qué</th><th>Plazo</th><th>Art.</th></tr>
+    <tr><td>REC: pagar</td><td>7 días</td><td>117</td></tr>
+    <tr><td>Reclamar RD, RM</td><td>20 días</td><td>137</td></tr>
+    <tr><td>Reclamar comiso o cierre</td><td>5 días</td><td>137</td></tr>
+    <tr><td>Apelar al TF</td><td>15 días</td><td>146</td></tr>
+    <tr><td>Ofrecer pruebas</td><td>30 días</td><td>125</td></tr>
+    <tr><td>Elevar apelación</td><td>30 días</td><td>145</td></tr>
+    <tr><td>No contencioso</td><td>45 días</td><td>162</td></tr>
+    <tr><td>Queja</td><td>20 días</td><td>155</td></tr>
+    <tr><td>Requerimiento a omisos</td><td>3 días</td><td>78</td></tr>
+    <tr><td>Subsanar apelación</td><td>15 días</td><td>146</td></tr>
+    <tr><td>Exhibir libros</td><td>10 días</td><td>16</td></tr>
+  </table>
+  <table>
+    <tr><th>Qué</th><th>Plazo</th><th>Art.</th></tr>
+    <tr><td>Fiscalización definitiva</td><td>1 año*</td><td>62-A</td></tr>
+    <tr><td>Fiscalización parcial</td><td>6 meses</td><td>61</td></tr>
+    <tr><td>TF resuelve</td><td>12 meses (18 PT)</td><td>150</td></tr>
+    <tr><td>Exoneración sin plazo</td><td>3 años</td><td>N. VII</td></tr>
+    <tr><td>Prórroga</td><td>única, hasta 3</td><td>N. VII</td></tr>
+  </table>
+  <div class="box trap"><span class="lbl">Trampa</span><p>*El año se cuenta desde que el deudor <b>entrega toda</b> la información del primer requerimiento, no desde la notificación.</p></div>
+  <div class="fn"><span>Plazos</span><span>4</span></div>
+</div>
+
+<!-- 5 SUNAT 4 NORMAS -->
+<div class="pg">
+  <div class="hd"><span class="n">03</span><h2>La SUNAT: 4 normas</h2><span class="t">institucional</span></div>
+  <table>
+    <tr><td>Ley 24829<br><span class="muted">1988 · García</span></td><td class="w"><b>Crea DOS</b>: la Superint. Nac. de <b>Aduanas</b> (art. 1) y la de <b>Administración Tributaria</b> (art. 2). Instituciones Públicas Descentralizadas; hasta el 2 % de lo recaudado.</td></tr>
+    <tr><td>D. Leg. 501<br><span class="muted">29/11/1988</span></td><td class="w"><b>Ley General</b>. Tributos internos "con excepción de los municipales". Sede en Lima, duración indefinida. Recauda vía el <b>Banco de la Nación</b>. Resuelve en 1ra instancia. Resoluciones de Superintendencia en El Peruano.</td></tr>
+    <tr><td>D.S. 061-2002-PCM<br><span class="muted">11/07/2002 · Toledo</span></td><td class="w"><b>Fusión por absorción</b>: la SUNAT (<b>incorporante</b>) absorbe a ADUANAS. Base: Ley 27658 de Modernización. 90 días.</td></tr>
+    <tr><td>Ley 29816<br><span class="muted">dic. 2011 · Humala</span></td><td class="w"><b>Fortalecimiento</b>. Nuevo nombre: "de Aduanas y de Administración Tributaria". <b>Organismo Técnico Especializado adscrito al MEF</b>. Régimen laboral <b>privado</b>.</td></tr>
+  </table>
+  <div class="box trap"><span class="lbl">Trampas</span><ul><li>¿Quién creó la SUNAT? → <b>Ley 24829</b>, no el D. Leg. 501.</li><li>La fusión fue por <b>D.S.</b>; el nombre cambió recién en <b>2011</b>.</li><li>La SUNAT <b>no</b> administra tributos municipales (predial, alcabala, arbitrios).</li></ul></div>
+  <div class="fn"><span>SUNAT</span><span>5</span></div>
+</div>
+
+<!-- 6 LEY 29816 -->
+<div class="pg">
+  <div class="hd"><span class="n">04</span><h2>Ley 29816 al detalle</h2><span class="t">vigente</span></div>
+  <div class="box lit">Art. 3: "Organismo Técnico Especializado adscrito al MEF… autonomía funcional, técnica, económica, financiera, presupuestal y administrativa."</div>
+  <div class="box mem"><span class="lbl">6 autonomías</span><p><b>FuTE FiPreAd</b>: Funcional · Técnica · Económica · Financiera · Presupuestal · Administrativa</p></div>
+  <h4>Consejo Directivo: 4 miembros</h4>
+  <p>Superintendente (preside, <b>voto dirimente</b>) · un funcionario del <b>MEF</b> · un funcionario del <b>BCR</b> · el Superintendente Adjunto que lo reemplaza. <b>No</b> acceden a la reserva tributaria.</p>
+  <h4>Superintendente (art. 9)</h4>
+  <p>Lo designa el <b>Presidente de la República</b>, con el Consejo de Ministros y a propuesta del MEF, por <b>Resolución Suprema</b>, por <b>5 años</b>. Peruano de nacimiento. Cesa por falta grave, sentencia firme o <b>pérdida de confianza</b>. Hoy: <b>César Luna Victoria León</b>.</p>
+  <h4>Recursos (art. 13)</h4>
+  <p>1.5 % de importaciones · 1.6 % de tributos (salvo aranceles e ITF) · 1.4 % ONP / 1 % EsSalud · 10 % de remates · 0.2 % de tributos encargados.</p>
+  <h4>Objeto (art. 1)</h4>
+  <p>Evasión y elusión · contrabando · comercio exterior · base tributaria · recaudación.</p>
+  <div class="fn"><span>SUNAT</span><span>6</span></div>
+</div>
+
+<!-- 7 ART 74 -->
+<div class="pg">
+  <div class="hd"><span class="n">05</span><h2>Constitución, art. 74</h2><span class="t">literal</span></div>
+  <div class="box lit">"Los tributos se crean, modifican o derogan, o se establece una exoneración, <b>exclusivamente por ley o decreto legislativo</b> en caso de delegación de facultades, salvo los <b>aranceles y tasas</b>, los cuales se regulan mediante <b>decreto supremo</b>."</div>
+  <div class="box lit">"Los Gobiernos Regionales y los Gobiernos Locales pueden crear, modificar y suprimir <b>contribuciones y tasas</b>… El Estado… debe respetar los principios de <b>reserva de la ley</b>, y los de <b>igualdad</b> y <b>respeto de los derechos fundamentales</b>. Ningún tributo puede tener <b>carácter confiscatorio</b>."</div>
+  <p>Las leyes de <b>presupuesto</b> y los <b>decretos de urgencia</b> no pueden contener materia tributaria. Los tributos <b>anuales</b> rigen desde el <b>1 de enero</b> siguiente. Las normas que violan este artículo "no surten efecto".</p>
+  <div class="box trap"><span class="lbl">Trampas</span><ul><li>Una municipalidad <b>nunca crea impuestos</b>.</li><li>Si dice "principio constitucional", la respuesta es <b>reserva de ley</b>.</li><li>Texto vigente desde la Ley 28390 (2004): "carácter" (antes "efecto") e incluye a los gobiernos <b>regionales</b>.</li></ul></div>
+  <div class="fn"><span>Constitución</span><span>7</span></div>
+</div>
+
+<!-- 8 NORMAS I-VIII -->
+<div class="pg">
+  <div class="hd"><span class="n">06</span><h2>Normas I–VIII</h2><span class="t">Título Preliminar</span></div>
+  <table>
+    <tr><td>I</td><td class="w"><b>Contenido</b>: principios, instituciones, procedimientos y normas.</td></tr>
+    <tr><td>II</td><td class="w"><b>Ámbito</b>: tributo = impuesto, contribución, tasa. Tasa = arbitrio, derecho, licencia. Un pago de origen contractual no es tasa.</td></tr>
+    <tr><td>III</td><td class="w"><b>Fuentes</b>: Constitución · tratados · leyes · leyes regionales y municipales · D.S. · jurisprudencia · resoluciones generales · doctrina. <b>La costumbre no.</b></td></tr>
+    <tr><td>IV</td><td class="w"><b>Legalidad – reserva de ley</b>: solo por ley o D. Leg. se crean tributos, exoneraciones, infracciones y sanciones, garantías y formas de extinción. Locales: <b>ordenanza</b>. Aranceles: <b>D.S.</b></td></tr>
+    <tr><td>V</td><td class="w"><b>Presupuesto</b>: la Ley de Presupuesto y la de créditos suplementarios no contienen normas tributarias.</td></tr>
+    <tr><td>VI</td><td class="w"><b>Derogación</b>: solo <b>expresa</b>, por norma de igual o mayor rango.</td></tr>
+    <tr><td>VII</td><td class="w"><b>Exoneraciones</b>: exposición de motivos + costo fiscal · máx. <b>3 años</b> (sin plazo = 3) · desde el 1 de enero · zona especial con <b>2/3</b> del Congreso · prórroga <b>única de hasta 3 años</b>, sin prórroga tácita · nada sobre el ISC.</td></tr>
+    <tr><td>VIII</td><td class="w"><b>Interpretación</b>: todos los métodos, pero <b>no</b> se crean tributos, sanciones ni exoneraciones por interpretación.</td></tr>
+  </table>
+  <div class="fn"><span>Título Preliminar</span><span>8</span></div>
+</div>
+
+<!-- 9 NORMAS IX-XVI -->
+<div class="pg">
+  <div class="hd"><span class="n">07</span><h2>Normas IX–XVI</h2><span class="t">Título Preliminar</span></div>
+  <table>
+    <tr><td>IX</td><td class="w"><b>Supletoria</b>: 1) principios del Derecho Tributario → 2) Administrativo → 3) Generales del Derecho.</td></tr>
+    <tr><td>X</td><td class="w"><b>Vigencia</b>: las leyes rigen desde el <b>día siguiente</b> de su publicación · los tributos <b>anuales</b>, desde el 1 de enero · los reglamentos, con la ley que reglamentan · las directivas de aplicación <b>general</b> se publican.</td></tr>
+    <tr><td>XI</td><td class="w"><b>Personas</b>: domiciliados (sociedad conyugal, sucesión indivisa) y no domiciliados por sus rentas en el Perú.</td></tr>
+    <tr><td>XII</td><td class="w"><b>Plazos</b>: días = <b>hábiles</b>; si vence en día inhábil, pasa al siguiente hábil; el medio día laborable es inhábil.</td></tr>
+    <tr><td>XIII</td><td class="w"><b>Diplomáticos</b>: su exoneración no cubre sus actividades económicas particulares.</td></tr>
+    <tr><td>XIV</td><td class="w"><b>MEF</b>: el Ejecutivo propone, promulga y reglamenta solo a través del MEF.</td></tr>
+    <tr><td>XV</td><td class="w"><b>UIT</b>: valor de referencia; se fija por <b>D.S.</b> según supuestos macroeconómicos. Sirve para bases, sanciones y obligaciones contables.</td></tr>
+    <tr><td>XVI</td><td class="w"><b>Elusión / simulación</b>: verdadera naturaleza de los actos; ante actos "artificiosos o impropios", la SUNAT exige la deuda o <b>disminuye saldos a favor</b>; en la simulación aplica la norma de los actos reales.</td></tr>
+  </table>
+  <div class="fn"><span>Título Preliminar</span><span>9</span></div>
+</div>
+
+<!-- 10 PALABRA -> NORMA -->
+<div class="pg">
+  <div class="hd"><span class="n">08</span><h2>Palabra gancho → Norma</h2><span class="t">asociación</span></div>
+  <table>
+    <tr><th>Si la pregunta dice…</th><th>Norma</th></tr>
+    <tr><td class="w">impuesto, contribución, tasa, arbitrio, licencia</td><td>II</td></tr>
+    <tr><td class="w">fuentes, doctrina, jurisprudencia, tratados</td><td>III</td></tr>
+    <tr><td class="w">solo por ley, reserva, ordenanza, aranceles</td><td>IV</td></tr>
+    <tr><td class="w">Ley de Presupuesto, créditos suplementarios</td><td>V</td></tr>
+    <tr><td class="w">derogación expresa, mismo rango</td><td>VI</td></tr>
+    <tr><td class="w">exoneración, beneficio, 3 años, prórroga, 2/3</td><td>VII</td></tr>
+    <tr><td class="w">interpretación, analogía, métodos</td><td>VIII</td></tr>
+    <tr><td class="w">supletoria, principios generales</td><td>IX</td></tr>
+    <tr><td class="w">día siguiente, 1 de enero, reglamentos</td><td>X</td></tr>
+    <tr><td class="w">no domiciliados, sucesión indivisa</td><td>XI</td></tr>
+    <tr><td class="w">días hábiles, inhábil, medio día</td><td>XII</td></tr>
+    <tr><td class="w">diplomáticos, cónsules</td><td>XIII</td></tr>
+    <tr><td class="w">MEF propone y reglamenta</td><td>XIV</td></tr>
+    <tr><td class="w">UIT, valor de referencia, macroeconómicos</td><td>XV</td></tr>
+    <tr><td class="w">elusión, simulación, artificioso, saldos a favor</td><td>XVI</td></tr>
+  </table>
+  <div class="box mem"><span class="lbl">Orden I→XVI</span><p>Contenido · Ámbito · Fuentes · Legalidad · Presupuesto · Modificación · Exoneraciones · Interpretación · Supletoria · Vigencia · Personas · Plazos · Diplomáticos · MEF · UIT · Elusión</p></div>
+  <div class="fn"><span>Título Preliminar</span><span>10</span></div>
+</div>
+
+<!-- 11 TRIBUTO -->
+<div class="pg">
+  <div class="hd"><span class="n">09</span><h2>Tributo y sus clases</h2><span class="t">Norma II</span></div>
+  <table>
+    <tr><td>Impuesto</td><td class="w">"cumplimiento <b>no origina una contraprestación directa</b>". IGV, Renta, ISC, ITF, predial, alcabala.</td></tr>
+    <tr><td>Contribución</td><td class="w">"<b>beneficios derivados</b> de la realización de obras públicas o de actividades estatales". EsSalud, ONP, SENATI, SENCICO.</td></tr>
+    <tr><td>Tasa</td><td class="w">"<b>prestación efectiva</b> por el Estado de un <b>servicio público individualizado</b> en el contribuyente".</td></tr>
+  </table>
+  <h4>Especies de tasa</h4>
+  <table>
+    <tr><td>Arbitrio</td><td class="w">"prestación o <b>mantenimiento</b> de un servicio público" (limpieza, parques, serenazgo)</td></tr>
+    <tr><td>Derecho</td><td class="w">"<b>servicio administrativo</b> público o el <b>uso o aprovechamiento de bienes públicos</b>"</td></tr>
+    <tr><td>Licencia</td><td class="w">"obtención de <b>autorizaciones específicas</b> para actividades de provecho particular"</td></tr>
+  </table>
+  <div class="box trap"><span class="lbl">Trampas</span><ul><li>La multa <b>no es tributo</b>; deuda = tributo + multa + intereses (art. 28).</li><li>Un pago de origen <b>contractual</b> no es tasa.</li><li>El predial y la alcabala son <b>impuestos</b> municipales.</li><li>Enunciado general → <b>tasa</b>; enunciado específico → la especie.</li><li>Lo recaudado por tributos distintos a los impuestos solo puede cubrir el costo de la obra o servicio.</li></ul></div>
+  <div class="fn"><span>Tributo</span><span>11</span></div>
+</div>
+
+<!-- 12 SUJETOS -->
+<div class="pg">
+  <div class="hd"><span class="n">10</span><h2>La obligación y sus sujetos</h2><span class="t">arts. 1–26</span></div>
+  <div class="box lit">Art. 1: "de <b>derecho público</b>… vínculo entre el acreedor y el deudor tributario, <b>establecido por ley</b>… <b>exigible coactivamente</b>."</div>
+  <table>
+    <tr><td>Nace (2)</td><td class="w">al realizarse el <b>hecho generador</b></td></tr>
+    <tr><td>Exigible (3)</td><td class="w">desde el vencimiento; si no hay plazo, desde el día 16</td></tr>
+    <tr><td>Acreedor (4)</td><td class="w">Gobierno Central, Regionales, Locales. <b>La SUNAT no.</b></td></tr>
+    <tr><td>Deudor (7)</td><td class="w">contribuyente <b>o</b> responsable</td></tr>
+    <tr><td>Contribuyente (8)</td><td class="w">realiza el hecho generador</td></tr>
+    <tr><td>Responsable (9)</td><td class="w">sin ser contribuyente, debe cumplir</td></tr>
+    <tr><td>Agentes (10)</td><td class="w">retención: descuenta · percepción: cobra de más. Los designa la ley, un D.S. o la Administración</td></tr>
+    <tr><td>Domicilio (11)</td><td class="w">"subsistente mientras su cambio no sea comunicado"; el procesal puede ser físico o electrónico</td></tr>
+    <tr><td>Representantes (16)</td><td class="w">padres, tutores · representantes legales · administradores · mandatarios, albaceas · síndicos. <b>Accionistas NO</b></td></tr>
+    <tr><td>Repetición (20)</td><td class="w">el responsable que pagó le cobra al contribuyente</td></tr>
+  </table>
+  <div class="box key"><span class="lbl">Prelación (art. 6)</span><p>Antes que el fisco cobran: remuneraciones, AFP/ONP/EsSalud, <b>alimentos</b>, <b>hipotecas</b> inscritas.</p></div>
+  <div class="fn"><span>Obligación</span><span>12</span></div>
+</div>
+
+<!-- 13 EXTINCIÓN -->
+<div class="pg">
+  <div class="hd"><span class="n">11</span><h2>Extinción (art. 27)</h2><span class="t">muy preguntado</span></div>
+  <div class="box mem"><span class="lbl">PaCo-CoCo-Re</span><p style="font-size:8.6pt">1 <b>Pago</b> · 2 <b>Compensación</b> · 3 <b>Condonación</b> · 4 <b>Consolidación</b> · 5 <b>Resolución</b> sobre cobranza dudosa o recuperación onerosa · 6 otros por ley especial</p></div>
+  <table>
+    <tr><td>Compensación (40)</td><td class="w">crédito pagado en exceso o indebidamente; periodo no prescrito; mismo órgano y entidad. Automática, de oficio o a solicitud</td></tr>
+    <tr><td>Condonación (41)</td><td class="w">solo por <b>norma con rango de ley</b>. Los municipios: intereses y sanciones (en tasas, también el tributo)</td></tr>
+    <tr><td>Consolidación (42)</td><td class="w">el <b>acreedor se vuelve deudor</b> por transmisión de bienes</td></tr>
+    <tr><td>Cobranza dudosa</td><td class="w">se agotó la cobranza coactiva</td></tr>
+    <tr><td>Recup. onerosa</td><td class="w">el monto no justifica cobrarlo</td></tr>
+  </table>
+  <div class="box trap"><span class="lbl">NO extinguen</span><ul><li><b>Prescripción</b>: extingue la <b>acción</b>. Art. 49: lo pagado tras prescribir no se devuelve.</li><li><b>Exoneración</b> e <b>inafectación</b>: la obligación nunca nació.</li><li>Caducidad, novación, fraccionamiento.</li></ul></div>
+  <p>Las sanciones se extinguen igual (art. 169).</p>
+  <div class="fn"><span>Extinción</span><span>13</span></div>
+</div>
+
+<!-- 14 PRESCRIPCIÓN -->
+<div class="pg">
+  <div class="hd"><span class="n">12</span><h2>Prescripción (arts. 43–49)</h2><span class="t">4 · 6 · 10</span></div>
+  <p>Prescribe la acción para <b>determinar</b>, <b>cobrar</b> y <b>sancionar</b>. Se cuenta desde el <b>1 de enero</b> siguiente (art. 44).</p>
+  <div class="g3">
+    <div class="tile"><span class="big">4</span><span class="s">declaraste · devolución · compensación</span></div>
+    <div class="tile"><span class="big">6</span><span class="s">no declaraste</span></div>
+    <div class="tile"><span class="big">10</span><span class="s">el agente no pagó lo retenido</span></div>
+  </div>
+  <h4>Interrupción (45): vuelve a CERO</h4>
+  <p>solicitud de devolución · <b>reconocimiento expreso</b> · notificación de actos para determinar o fiscalizar (salvo fiscalización parcial) · pago parcial · solicitud de fraccionamiento · OP o REC notificadas</p>
+  <h4>Suspensión (46): se PAUSA</h4>
+  <p>procedimiento <b>contencioso</b> · proceso judicial o amparo · solicitud de devolución o compensación · <b>no habido</b> · plazo para rehacer libros · fraccionamiento vigente (para el cobro)</p>
+  <div class="box trap"><span class="lbl">Trampas</span><ul><li>Intercambian <b>4↔6</b>.</li><li>Los actos de fiscalización <b>interrumpen</b>, no suspenden.</li><li>La prescripción se declara <b>solo a pedido del deudor</b> (47), en <b>cualquier estado</b> del procedimiento (48).</li></ul></div>
+  <div class="fn"><span>Prescripción</span><span>14</span></div>
+</div>
+
+<!-- 15 DEUDA -->
+<div class="pg">
+  <div class="hd"><span class="n">13</span><h2>Deuda, TIM, fraccionamiento</h2><span class="t">arts. 28–38</span></div>
+  <table>
+    <tr><td>Deuda (28)</td><td class="w"><b>tributo + multas + intereses</b>. Intereses: moratorio del tributo, moratorio de multas y de fraccionamiento</td></tr>
+    <tr><td>Imputación (31)</td><td class="w">primero el <b>interés moratorio</b>, luego el tributo o la multa. Sin indicación: primero la deuda <b>menor</b>, y la más <b>antigua</b></td></tr>
+    <tr><td>TIM (33)</td><td class="w">máximo <b>TAMN + 10 %</b>. La fija la SUNAT; las municipalidades por ordenanza, sin superarla</td></tr>
+    <tr><td>Fraccionar (36)</td><td class="w">general o particular. <b>Nunca</b> tributos <b>retenidos o percibidos</b>. Garantías: carta fianza, hipoteca. Interés entre el 80 % de la TIM y la TIM</td></tr>
+    <tr><td>Aceptar pago (37)</td><td class="w">la Administración no puede negarse a recibir un pago</td></tr>
+    <tr><td>Devolución (38)</td><td class="w">el pago indebido o en exceso se devuelve <b>con intereses</b></td></tr>
+  </table>
+  <div class="box key"><span class="lbl">Derechos (92) · obligaciones (87)</span><p><b>Obligaciones</b>: RUC · comprobantes · libros · declarar · permitir el control · conservar documentos.<br><b>Derechos</b>: trato respetuoso · reclamar · conocer el expediente · fraccionamiento · reserva · devolución · pedir la prescripción.</p></div>
+  <div class="box key"><span class="lbl">Reserva tributaria (85)</span><p>Rentas, gastos y base imponible son reservados. Excepciones: Poder Judicial · Fiscal de la Nación · Comisiones investigadoras del Congreso.</p></div>
+  <div class="fn"><span>Deuda</span><span>15</span></div>
+</div>
+
+<!-- 16 DETERMINACIÓN Y ACTOS -->
+<div class="pg">
+  <div class="hd"><span class="n">14</span><h2>Determinación y actos</h2><span class="t">arts. 59–82</span></div>
+  <p><b>Art. 59</b>: el deudor verifica el hecho, la base y la cuantía. La Administración hace lo mismo y además <b>identifica al deudor</b>. Se inicia por el deudor, de oficio o por <b>denuncia de terceros</b> (art. 60).</p>
+  <table>
+    <tr><td>Base cierta (63)</td><td class="w">conoce el hecho "<b>en forma directa</b>"</td></tr>
+    <tr><td>Base presunta</td><td class="w">"por <b>relación normal</b>" con el hecho; las presunciones no se acumulan (73)</td></tr>
+  </table>
+  <h4>Fiscalización</h4>
+  <p><b>Inicio</b>: carta de presentación + primer requerimiento → <b>fin</b>: RD y/o RM. Definitiva: <b>1 año</b>. Parcial (uno o algunos elementos): <b>6 meses</b>.</p>
+  <table>
+    <tr><th>Acto</th><th>Para qué</th></tr>
+    <tr><td>RD (76)</td><td class="w">"resultado de su labor destinada a controlar"; crédito o deuda</td></tr>
+    <tr><td>OP (78)</td><td class="w">sin RD previa: <b>autoliquidado</b>, pagos a cuenta, errores materiales, omisos</td></tr>
+    <tr><td>RM</td><td class="w">sanciona una infracción</td></tr>
+    <tr><td>REC (117)</td><td class="w">inicia la cobranza; 7 días; la emite el Ejecutor Coactivo</td></tr>
+  </table>
+  <div class="box mem"><span class="lbl">Clave</span><p>RD = la SUNAT <b>fiscalizó</b>. OP = <b>vos declaraste</b> y no pagaste.</p></div>
+  <div class="fn"><span>Actos</span><span>16</span></div>
+</div>
+
+<!-- 17 PROCEDIMIENTOS -->
+<div class="pg">
+  <div class="hd"><span class="n">15</span><h2>Los 4 procedimientos (art. 112)</h2><span class="t">Libro III</span></div>
+  <div class="box lit">"1.- Fiscalización. 2.- Cobranza Coactiva. 3.- Contencioso-Tributario. 4.- No Contencioso."</div>
+  <h4>Cobranza coactiva (114–123)</h4>
+  <p>Es una facultad de la Administración, sin juez. La ejerce el <b>Ejecutor Coactivo</b> con los Auxiliares. REC: 7 días → <b>embargo</b> en forma de intervención, depósito, inscripción o retención → tasación y <b>remate</b>. Si el bien es de otro: <b>intervención excluyente de propiedad</b> (120).</p>
+  <h4>No contencioso (162–163)</h4>
+  <p>Son <b>solicitudes a pedido de parte</b>. Si están vinculadas a la determinación: <b>45 días</b>, y se <b>apela</b> al TF, salvo la <b>devolución, que se reclama</b>. Si no te resuelven, reclamás dándola por denegada. Las no vinculadas van por la <b>Ley 27444</b>.</p>
+  <h4>Queja (155)</h4>
+  <p>Va contra <b>infracciones de procedimiento</b>, no contra la deuda. Contra la Administración la resuelve el <b>Tribunal Fiscal</b>; contra el Tribunal Fiscal, el <b>Ministro de Economía</b>. Plazo: 20 días.</p>
+  <div class="box trap"><span class="lbl">Trampa</span><p>"Verificación" <b>no</b> es uno de los 4 procedimientos. <b>Denegatoria</b> del fraccionamiento → apelación ◇. <b>Pérdida</b> del fraccionamiento → reclamación.</p></div>
+  <div class="fn"><span>Procedimientos</span><span>17</span></div>
+</div>
+
+<!-- 18 CONTENCIOSO -->
+<div class="pg">
+  <div class="hd"><span class="n">16</span><h2>Contencioso tributario</h2><span class="t">arts. 124–157</span></div>
+  <table>
+    <tr><th>Etapa</th><th>Ante</th><th>Plazo</th></tr>
+    <tr><td>Reclamación</td><td class="w">la SUNAT</td><td>20 (5)</td></tr>
+    <tr><td>Apelación</td><td class="w">el Tribunal Fiscal, presentada ante quien resolvió</td><td>15</td></tr>
+    <tr><td>Demanda</td><td class="w">Poder Judicial (157)</td><td>—</td></tr>
+  </table>
+  <ul>
+    <li><b>Reclamables (135)</b>: RD, OP, RM · comiso, internamiento, cierre · resolución ficta · devolución · <b>pérdida</b> del fraccionamiento.</li>
+    <li><b>Pago previo (136)</b>: en RD y RM pagás lo <b>no reclamado</b>; en una OP, por regla, pagás primero.</li>
+    <li><b>Pruebas (125)</b>: solo <b>documentos, pericia e inspección</b>; 30 días. Sin testigos.</li>
+    <li>Máximo <b>2 instancias</b> antes del Tribunal Fiscal (124).</li>
+    <li><b>Silencio negativo (144)</b>: si no te resuelven, das por denegado y apelás.</li>
+    <li><b>Puro derecho (151)</b>: sin hechos que probar, vas directo al TF.</li>
+    <li><b>Reexamen (127)</b>: se puede revisar todo el asunto.</li>
+    <li><b>Inimpugnables (147)</b>: no se apela lo que no se reclamó.</li>
+  </ul>
+  <div class="box key"><span class="lbl">Tribunal Fiscal (143)</span><p>Resuelve en la <b>última instancia administrativa</b>: tributos generales y locales, EsSalud, ONP y aduanas. Depende del <b>MEF</b>. Tarda 12 meses. Sus criterios generales son de <b>observancia obligatoria</b> (154).</p></div>
+  <div class="fn"><span>Contencioso</span><span>18</span></div>
+</div>
+
+<!-- 19 INFRACCIONES -->
+<div class="pg">
+  <div class="hd"><span class="n">17</span><h2>Infracciones y sanciones</h2><span class="t">Libro IV</span></div>
+  <div class="box lit">Art. 164: "toda acción u omisión que importe la violación de normas tributarias, <b>siempre que se encuentre tipificada</b>…"</div>
+  <h4>6 tipos (172): I-C-L-D-C-O</h4>
+  <p>1 <b>Inscribirse</b> (173) · 2 <b>Comprobantes</b> (174) · 3 <b>Libros</b> (175) · 4 <b>Declarar</b> (176) · 5 permitir el <b>Control</b> (177) · 6 <b>Otras</b>: cifras falsas, no pagar lo retenido (178)</p>
+  <h4>Sanciones (165 y 180)</h4>
+  <p><b>Multa</b> · <b>comiso</b> · <b>internamiento</b> de vehículos · <b>cierre</b> temporal · <b>suspensión</b> de licencias. La multa se calcula con la UIT de la <b>fecha de la infracción</b>.</p>
+  <table>
+    <tr><td>Objetiva (165)</td><td class="w">no importa la intención</td></tr>
+    <tr><td>Intransmisible (167)</td><td class="w">la sanción no se hereda</td></tr>
+    <tr><td>Irretroactiva (168)</td><td class="w">las normas que reducen sanciones <b>no</b> se aplican hacia atrás</td></tr>
+    <tr><td>Extinción (169)</td><td class="w">igual que el art. 27</td></tr>
+    <tr><td>Incentivos (179)</td><td class="w">rebaja si subsanás antes de que te detecten</td></tr>
+  </table>
+  <div class="box key"><span class="lbl">Delito ≠ infracción</span><p>El delito tributario usa engaño o ardid; lo juzga el <b>Poder Judicial</b> (189). La SUNAT avisa al Ministerio Público (192). La pena no excluye el pago del tributo (190).</p></div>
+  <div class="fn"><span>Infracciones</span><span>19</span></div>
+</div>
+
+<!-- 20 IGV -->
+<div class="pg">
+  <div class="hd"><span class="n">18</span><h2>IGV</h2><span class="t">D.S. 055-99-EF</span></div>
+  <p><b>18 % = 16 % + 2 % IPM</b>. Impuesto al <b>consumo</b>, <b>indirecto</b>, <b>plurifásico NO acumulativo</b>; lo soporta el <b>consumidor final</b>. IGV a pagar = débito fiscal − crédito fiscal.</p>
+  <h4>5 operaciones gravadas (art. 1)</h4>
+  <p>1 <b>venta en el país</b> de bienes muebles · 2 servicios prestados o <b>utilizados en el país</b> · 3 contratos de <b>construcción</b> · 4 <b>primera venta</b> de inmuebles por el constructor · 5 <b>importación</b>. La exportación <b>no</b> paga.</p>
+  <h4>Bien mueble</h4>
+  <p>"corporales que pueden llevarse de un lugar a otro" + derechos, marcas, naves. <b>No</b>: moneda, acciones, títulos valores ◇.</p>
+  <h4>Retiro = se trata como venta</h4>
+  <p><b>Gravado</b>: obsequios · lo que se apropia el dueño · entrega a trabajadores "de su <b>libre disposición</b> y no necesarios".</p>
+  <p><b>No gravado</b>: muestras médicas (venta con receta) · mermas y desmedros · promoción hasta el 1 % (tope 20 UIT) · material documentario · bonificaciones al cliente · condición de trabajo.</p>
+  <div class="box key"><span class="lbl">Pagos adelantados</span><p><b>Detracción</b>: depósito en el Banco de la Nación · <b>retención</b>: el comprador retiene · <b>percepción</b>: el vendedor cobra de más.</p></div>
+  <div class="fn"><span>IGV</span><span>20</span></div>
+</div>
+
+<!-- 21 RENTA -->
+<div class="pg">
+  <div class="hd"><span class="n">19</span><h2>Impuesto a la Renta</h2><span class="t">D.S. 179-2004-EF</span></div>
+  <table>
+    <tr><td>1ra</td><td class="w">arrendamiento y <b>cesión de bienes</b>, muebles e inmuebles</td></tr>
+    <tr><td>2da</td><td class="w">capital: intereses, <b>regalías</b>, <b>dividendos</b>, rentas vitalicias, ganancias de capital</td></tr>
+    <tr><td>3ra</td><td class="w">empresarial: comercio, industria, negocio habitual. <b>Devengado</b></td></tr>
+    <tr><td>4ta</td><td class="w">trabajo <b>independiente</b> (+ directores, albaceas ◇)</td></tr>
+    <tr><td>5ta</td><td class="w">trabajo <b>dependiente</b> (planilla)</td></tr>
+  </table>
+  <p>Tasas: Régimen General <b>29.5 %</b> · RMT 10 % hasta 15 UIT · deducción de 7 UIT para 4ta y 5ta ◇.</p>
+  <h4>Teorías</h4>
+  <p><b>Renta-producto</b>: fuente durable y periódica · <b>flujo de riqueza</b>: también lo eventual, accidental y gratuito · <b>consumo + incremento patrimonial</b>.</p>
+  <h4>Gastos (causalidad, art. 37)</h4>
+  <p>Representación: 0.5 % de los ingresos <b>brutos</b>, tope 40 UIT · recreativos: 0.5 % de los <b>netos</b>, tope 40 UIT · la publicidad sí se deduce.</p>
+  <p><b>No deducibles (44)</b>: el propio IR · multas e intereses moratorios · gastos personales · países de baja o nula imposición · comprobantes de no habidos.</p>
+  <div class="box trap"><span class="lbl">Trampas</span><p>Alquilar algo es <b>1ra</b> · la 3ra se rige por el <b>devengado</b> · brutos ≠ netos.</p></div>
+  <div class="fn"><span>Renta</span><span>21</span></div>
+</div>
+
+<!-- 22 PARES -->
+<div class="pg">
+  <div class="hd"><span class="n">20</span><h2>Pares que confunden</h2><span class="t">diferencias</span></div>
+  <table>
+    <tr><td>Exoneración</td><td class="w">gravado, liberado temporalmente</td></tr>
+    <tr><td>Inafectación</td><td class="w">nunca entró en el campo del tributo</td></tr>
+    <tr><td>Evasión</td><td class="w">ilegal, ocultás</td></tr>
+    <tr><td>Elusión</td><td class="w">actos artificiosos (Norma XVI)</td></tr>
+    <tr><td>Interrupción</td><td class="w">el plazo vuelve a cero</td></tr>
+    <tr><td>Suspensión</td><td class="w">el plazo se pausa</td></tr>
+    <tr><td>Acreedor</td><td class="w">el Gobierno Central (la SUNAT administra)</td></tr>
+    <tr><td>Retención</td><td class="w">descuenta al que le paga</td></tr>
+    <tr><td>Percepción</td><td class="w">cobra de más al cliente</td></tr>
+    <tr><td>RD / OP</td><td class="w">fiscalización / autoliquidación</td></tr>
+    <tr><td>Reclamación</td><td class="w">ante la SUNAT, 20 días</td></tr>
+    <tr><td>Apelación</td><td class="w">ante el TF, 15 días</td></tr>
+    <tr><td>Queja</td><td class="w">defecto de procedimiento</td></tr>
+    <tr><td>Contencioso</td><td class="w">impugnás · no contencioso: solicitás</td></tr>
+    <tr><td>Nace / exigible</td><td class="w">hecho generador / vencimiento</td></tr>
+    <tr><td>Cierta / presunta</td><td class="w">directa / relación normal</td></tr>
+    <tr><td>Ley / D.S.</td><td class="w">crea impuestos / aranceles, tasas, UIT</td></tr>
+    <tr><td>Brutos / netos</td><td class="w">representación / recreativos</td></tr>
+  </table>
+  <div class="fn"><span>Pares</span><span>22</span></div>
+</div>
+
+<!-- 23 ARTÍCULOS -->
+<div class="pg">
+  <div class="hd"><span class="n">21</span><h2>Artículos que más se preguntan</h2><span class="t">Código</span></div>
+  <div class="g2">
+  <table>
+    <tr><td>1</td><td class="w">obligación</td></tr><tr><td>2</td><td class="w">nacimiento</td></tr><tr><td>3</td><td class="w">exigibilidad</td></tr><tr><td>4</td><td class="w">acreedor</td></tr><tr><td>6</td><td class="w">prelación</td></tr><tr><td>7</td><td class="w">deudor</td></tr><tr><td>8</td><td class="w">contribuyente</td></tr><tr><td>9</td><td class="w">responsable</td></tr><tr><td>10</td><td class="w">agentes</td></tr><tr><td>11</td><td class="w">domicilio</td></tr><tr><td>16</td><td class="w">representantes</td></tr><tr><td><b>27</b></td><td class="w"><b>extinción</b></td></tr><tr><td>28</td><td class="w">deuda</td></tr><tr><td>31</td><td class="w">imputación</td></tr><tr><td>33</td><td class="w">TIM</td></tr><tr><td>36</td><td class="w">fraccionamiento</td></tr><tr><td>40</td><td class="w">compensación</td></tr><tr><td>41</td><td class="w">condonación</td></tr><tr><td>42</td><td class="w">consolidación</td></tr><tr><td><b>43</b></td><td class="w"><b>prescripción</b></td></tr><tr><td>45 / 46</td><td class="w">interrupción / suspensión</td></tr>
+  </table>
+  <table>
+    <tr><td>59</td><td class="w">determinación</td></tr><tr><td>61</td><td class="w">fiscalización parcial</td></tr><tr><td>62-A</td><td class="w">plazo de 1 año</td></tr><tr><td>63</td><td class="w">cierta / presunta</td></tr><tr><td><b>76</b></td><td class="w"><b>RD</b></td></tr><tr><td><b>78</b></td><td class="w"><b>OP</b></td></tr><tr><td>85</td><td class="w">reserva</td></tr><tr><td>87</td><td class="w">obligaciones</td></tr><tr><td>92</td><td class="w">derechos</td></tr><tr><td>112</td><td class="w">4 procedimientos</td></tr><tr><td>117</td><td class="w">REC</td></tr><tr><td>124</td><td class="w">etapas del contencioso</td></tr><tr><td>135</td><td class="w">reclamables</td></tr><tr><td>137</td><td class="w">20 días</td></tr><tr><td>143</td><td class="w">Tribunal Fiscal</td></tr><tr><td>146</td><td class="w">15 días</td></tr><tr><td>155</td><td class="w">queja</td></tr><tr><td>162</td><td class="w">no contencioso</td></tr><tr><td>164</td><td class="w">infracción</td></tr><tr><td>172</td><td class="w">6 tipos</td></tr><tr><td>180</td><td class="w">sanciones</td></tr>
+  </table>
+  </div>
+  <div class="fn"><span>Artículos</span><span>23</span></div>
+</div>
+
+<!-- 24 TRAMPAS / CONTRAPORTADA -->
+<div class="pg back">
+  <div class="hd"><span class="n">22</span><h2>Cómo detectar la trampa</h2><span class="t">método</span></div>
+  <ol>
+    <li><b>¿Piden la CORRECTA o la INCORRECTA?</b> Subrayalo mentalmente.</li>
+    <li><b>Números cambiados</b>: 4↔6 · 3↔4 · 20↔15 · brutos↔netos · 1 %↔0.5 %.</li>
+    <li><b>Palabra cambiada</b>: general↔particular · anual↔mensual · interrumpe↔suspende · cierta↔presunta · en el país↔exterior · acumulativo↔no acumulativo.</li>
+    <li><b>Absolutos falsos</b>: "únicamente", "siempre y cuando", "no podrá".</li>
+    <li><b>Concepto vecino</b>: prescripción como forma de extinción · derecho en lugar de tasa · legalidad en lugar de reserva de ley · RD en lugar de OP.</li>
+    <li>Si dos opciones parecen buenas, elegí la que copia <b>literal</b> la norma.</li>
+  </ol>
+  <div class="box key"><span class="lbl">Lo esencial en 5 líneas</span><p>Tributo = impuesto, contribución, tasa · extinción = PaCo-CoCo-Re (sin prescripción) · prescripción 4-6-10 · reclamar 20, apelar 15, REC 7 · SUNAT = Organismo Técnico Especializado adscrito al MEF, creada por la Ley 24829.</p></div>
+  <div class="fn"><span>Repaso · no reemplaza la norma oficial</span><span>24</span></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import url("fonts/literata.css");
+
+:root {
+  --ink: #1d2327;
+  --ink-soft: #4a545b;
+  --muted: #7b858c;
+  --paper: #fdfcf8;
+  --rule: #d9d6cc;
+  --tint: #f3f1ea;
+  --accent: #1f5f5b;       /* verde petróleo sobrio */
+  --accent-soft: #e3eeec;
+  --trap: #9a4a16;         /* ámbar oscuro para trampas */
+  --trap-soft: #fbefe3;
+  --ok: #2f6b3a;
+  --ok-soft: #e8f1e8;
+  --warn: #6b5b16;
+  --warn-soft: #f6f1d8;
+  --serif: "Literata", Georgia, serif;
+  --sans: "Inter", "Liberation Sans", sans-serif;
+  --mono: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-optical-sizing: auto;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-rendering: optimizeLegibility;
+  font-variant-numeric: lining-nums;
+}
+
+h1, h2, h3, h4 { font-family: var(--sans); color: var(--ink); line-height: 1.15; hyphens: none; }
+strong, b { font-weight: 700; }
+em { font-style: italic; }
+.num, .mono { font-family: var(--mono); font-weight: 600; letter-spacing: -0.01em; }
+.sans { font-family: var(--sans); }
+.muted { color: var(--muted); }
+.accent { color: var(--accent); }
+
+table { width: 100%; border-collapse: collapse; }
+th { font-family: var(--sans); font-weight: 600; text-align: left; color: var(--accent);
+     border-bottom: 1.5px solid var(--accent); }
+td { border-bottom: 0.6px solid var(--rule); vertical-align: top; }
+tr { break-inside: avoid; }
+
+.box { border-radius: 4px; break-inside: avoid; }
+.trap { background: var(--trap-soft); border-left: 3px solid var(--trap); }
+.trap .lbl { color: var(--trap); }
+.key  { background: var(--accent-soft); border-left: 3px solid var(--accent); }
+.key .lbl { color: var(--accent); }
+.mem  { background: var(--warn-soft); border-left: 3px solid var(--warn); }
+.mem .lbl { color: var(--warn); }
+.lit  { background: var(--tint); border-left: 3px solid var(--ink-soft); font-style: italic; }
+.lbl { font-family: var(--sans); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+
+.v  { color: var(--ok); font-family: var(--sans); font-weight: 700; }
+.nv { color: var(--warn); font-family: var(--sans); font-weight: 700; }
+.x  { color: var(--trap); font-family: var(--sans); font-weight: 700; }
